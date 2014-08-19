@@ -1,0 +1,79 @@
+/*
+ style.css
+ ---------
+ Sébastien Vitard
+*/
+
+@font-face {
+	font-family: 'LearningCurveProRegular';
+    src: url('fonts/LearningCurve_OT-webfont.eot');
+    src: url('fonts/LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LearningCurve_OT-webfont.woff') format('woff'),
+         url('fonts/LearningCurve_OT-webfont.ttf') format('truetype'),
+         url('fonts/LearningCurve_OT-webfont.svg#LearningCurveProRegular') format('svg');
+}
+
+* {
+	font-family: Arial, "Arial Black", "Courier New", Georgia, Impact, "Times New Roman", "Trebuchet MS", Verdana, sans-serif, serif;
+}
+
+body {
+	background-image: url("img/hexellence.png");
+	background-attachment: fixed; /* fixed, scroll */
+	background-repeat: repeat; /* no-repeat, repeat-x, repeat-y, repeat */
+	background-position: 30px 50px;
+	background-color: silver; /* white, silver, gray, black, red, maroon, lime, green, yellow, olive, blue, navy, fuchsia, purple, aqua, teal */
+	color: black;
+}
+
+h1,em {
+	color: blue; /* blue, #0000FF, #00F, rgb(0, 0, 255) */
+}
+
+h1 {
+	font-family: 'LearningCurveProRegular', Arial, sans-serif;
+	font-size: xx-large; /* xx-small, x-small, small, medium, large, x-large, xx-large */
+}
+
+em {
+	font-style: italic; /* normal, italic, oblique */
+}
+
+strong {
+	font-style: oblique; /* normal, italic, oblique */
+	font-weight: normal; /* normal, bold */
+}
+
+h2 {
+	font-size: 166%;
+	text-decoration: underline; /* underline, line-through, overline, blink, none */
+}
+
+h3 {
+	font-size: 1.33em;
+}
+
+p {
+	text-align: justify; /* left, center, right, justify*/
+}
+
+p.introduction {
+	color: blue;
+	font-size: 14px;
+}
+
+p img {
+	float: left; /* left, right */
+}
+
+.p_under_image {
+	clear: both;
+}
+
+#top {
+	color: red;
+}
+
+.think {
+	color: blue;
+}
