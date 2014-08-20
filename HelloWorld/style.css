@@ -18,16 +18,42 @@
 }
 
 body {
-	background-image: url("img/hexellence.png");
-	background-attachment: fixed; /* fixed, scroll */
-	background-repeat: repeat; /* no-repeat, repeat-x, repeat-y, repeat */
-	background-position: 30px 50px;
+	background: url("img/cobalt_logo_mini.png") no-repeat top right, url("img/hexellence.png") fixed;
+	/*background-image: url("img/hexellence.png");*/
+	/*background-attachment: fixed;*/ /* fixed, scroll */
+	/*background-repeat: no-repeat;*/ /* no-repeat, repeat-x, repeat-y, repeat */
+	/*background-position: 30px 50px;*/ /* top, bottom, left, right, center 30px 50px */
 	background-color: silver; /* white, silver, gray, black, red, maroon, lime, green, yellow, olive, blue, navy, fuchsia, purple, aqua, teal */
 	color: black;
 }
 
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: navy;
+}
+
+a:active {
+	border: 1px purple dotted;
+	text-decoration: underline;
+	color: purple;
+}
+
+a:focus {
+	border: 1px red dotted;
+	color: red;
+}
+
+a:visited {
+	color: gray;
+}
+
 h1,em {
-	color: blue; /* blue, #0000FF, #00F, rgb(0, 0, 255) */
+	color: blue; /* blue, #0000FF, #00F, rgb(0, 0, 255), rgba(0, 0, 255, 1) */
 }
 
 h1 {
@@ -47,19 +73,29 @@ strong {
 h2 {
 	font-size: 166%;
 	text-decoration: underline; /* underline, line-through, overline, blink, none */
+	text-shadow: 3px 3px 6px blue;
 }
 
 h3 {
 	font-size: 1.33em;
+	border: 2px blue outset; /* solid, dotted, dashed, double, groove, ridge, inset, outset; */
+	border-radius: 5px 10px 10px 5px;
 }
 
 p {
 	text-align: justify; /* left, center, right, justify*/
+	background-color: silver;
+	border-left: 2px black solid;
+	color: black;
+	opacity: 0.6;
+	border-radius: 10px / 20px;
+	box-shadow: 6px 6px 6px black;
 }
 
 p.introduction {
 	color: blue;
 	font-size: 14px;
+	box-shadow: 6px 6px 6px black inset;
 }
 
 p img {
