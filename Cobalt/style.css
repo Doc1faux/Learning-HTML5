@@ -1,0 +1,43 @@
+header {
+	background-color: #058CDB;
+	color: white;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 12px;
+	background-color: white;
+	box-shadow: 0px 1px 1px silver;
+	z-index: 1;
+}
+
+nav img, nav ul {
+	vertical-align: middle;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	display: inline;
+	border: 1px solid blue;
+}
+
+#features, #get_started, #apps {
+	background-color: white;
+	color: black;
+}
+
+#why_cobalt, #faq, #contact {
+	background-color: #058CDB;
+	color: white;
+}
+
+footer p {
+	text-align: center;
+	background-color: white;
+}
