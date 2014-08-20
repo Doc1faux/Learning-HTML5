@@ -1,3 +1,16 @@
+* {
+	font-family: sans-serif;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #058CDB;
+}
+
+a:hover {
+	color: navy;
+}
+
 header {
 	background-color: #058CDB;
 	color: white;
@@ -24,7 +37,16 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	border: 1px solid blue;
+	font-size: 14px;
+	margin: 0 12px 0 12px;
+}
+
+nav ul li a, nav ul li a:visited {
+	color: silver;
+}
+
+nav ul li a:hover {
+	color: black;
 }
 
 #features, #get_started, #apps {
