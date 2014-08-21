@@ -63,6 +63,9 @@ section h2 {
 	background-color: #DAFFE2;
 }
 
+#sidebar p {
+	line-height: 2.14;
+}
 #sidebar footer {
 	position: absolute;
 	bottom: 0;
