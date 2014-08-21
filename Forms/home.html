@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Forms</title>
+</head>
+<body>
+	<form method="post" action="home.html">
+		<p>
+			<label for="search">Search user</label>: <input type="search" name="search" id="search" /><br />
+			Or create one: <br />
+			<fieldset>
+				<legend>Account</legend>
+				<label for="pseudo">Pseudo</label>: <input type="text" name="pseudo" id="pseudo" placeholder="John Appleseed" maxlength="15" size="16" autofocus /><br />
+				<label for="email">Email</label>: <input type="email" name="email" id="email" required /><br />
+				<label for="password">Password</label>: <input type="password" name="password" id="password" maxlength="8" size="9" required /><br />
+			</fieldset>
+			<fieldset>
+				<legend>Informations</legend>
+				<label for="country">Country</label>: <select name="country" id="country">
+					<optgroup label="Europe">
+						<option value="france" selected>France</option>
+						<option value="spain">Spain</option>
+						<option value="italy">Italy</option>
+						<option value="united_kingdom">United Kingdom</option>
+					</optgroup>
+					<optgroup label="America">
+						<option value="canada">Canada</option>
+						<option value="united_states">United States</option>
+					</optgroup>
+					<optgroup label="Asia">
+						<option value="china">China</option>
+						<option value="japan">Japan</option>
+					</optgroup>
+				</select><br />
+				<label for="phone">Phone</label>: <input type="tel" name="phone" id="phone" /><br />
+				<label for="site">Site</label>: <input type="url" name="site" id="site" /><br />
+				Age:<br />
+				<input type="radio" name="age" value="less_21" id="less_21" /><label for="less_21">Less than 21</label><br />
+				<input type="radio" name="age" value="between_21_30" id="between_21_30" checked /><label for="between_21_25">Between 21 and 30</label><br />
+				<input type="radio" name="age" value="between_30_40" id="between_30_40" /><label for="between_30_40">Between 30 and 40</label><br />
+				<input type="radio" name="age" value="more_40" id="more_40" /><label for="more_40">More than 40</label><br />
+			</fieldset>
+			<fieldset>
+				<legend>Application informations</legend>
+				<label for="weight">Weight</label>: <input type="number" name="weight" id="weight" min="0" max="200" step="1" /> kg<br />
+				Check food you enjoy to eat:<br />
+				<input type="checkbox" name="french_fries" id="french_fries" /><label for="french_fries">French fries</label><br />
+				<input type="checkbox" name="ice_cream" id="ice_cream" checked /><label for="ice_cream">Ice cream</label><br />
+				<label for="steps_goal">Steps goal</label>: <input type="range" name="steps_goal" id="steps_goal" min="2500" max="30000" step="2500" /> steps<br />
+				<label for="date_goal">Achieve date</label>: <input type="date" name="date_goal" id="date_goal" /><br />
+				<label for="theme">Theme</label>: <input type="color" name="theme" id="theme" /><br />
+			</fieldset>
+			<label for="message">Message</label>: <br /><textarea name="message" id="message">Hello World!</textarea><br />
+			<input type="submit" value="Send" />
+		</p>
+	</form>
+</body>
+</html>
