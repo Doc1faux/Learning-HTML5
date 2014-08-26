@@ -37,3 +37,25 @@ a = myDiv.firstChildElement; // a
 var value = text.nodeValue; // or .data
 var childNodes = myDiv.childNodes; // #text, a
 div = myDiv.nextSibling; // or nextElementSibling: div
+
+var newLink = document.createElement('a');
+var newLinkText = document.createTextNode('Fucking text');
+
+newLink.id = 'link_openclassrooms';
+newLink.href = 'http://fr.openclassrooms.com/';
+newLink.title = 'Apprenez le code avec OpenClassrooms !';
+newLink.setAttribute('tabindex', 10);
+
+newLink.appendChild(newLinkText);
+myDiv.lastElementChild.appendChild(newLink);
+
+var newLink2 = newLink.cloneNode(true); // Do not clone listeners
+var newText2 = document.createTextNode('Apprenez avec le Site du Zéro !');
+newLink2.replaceChild(newText2, newLink2.firstChild);
+myDiv.lastElementChild.appendChild(newLink2);
+
+var oldLink = newLink2.parentNode.removeChild(newLink);
+var myDivHasChild = myDiv.hasChildNodes();
+
+var paragraph = myDiv.firstElementChild;
+paragraph.insertBefore(oldLink, paragraph.lastChild);
